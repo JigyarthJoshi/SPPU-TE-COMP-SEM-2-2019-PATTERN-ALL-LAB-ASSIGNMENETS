@@ -1,0 +1,43 @@
+<apex:page controller="Calculator1">
+
+<apex:form >
+   
+    <apex:pageBlock >
+        <apex:pageBlockSection >
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="Value 1"/>
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+                <apex:inputText value="{!val1}"/>
+            </apex:pageBlockSectionItem>                          
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="Value 2"/>
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+                <apex:inputText value="{!val2}"/>
+            </apex:pageBlockSectionItem>                         
+            <apex:pageBlockSectionItem >
+                <apex:selectRadio value="{!func}" layout="pageDirection">
+                    <apex:selectOption itemValue="add" itemLabel="Add"/>
+                    <apex:selectOption itemValue="sub" itemLabel="Subtract"/>
+                    <apex:selectOption itemValue="div" itemLabel="Division"/>
+                    <apex:selectOption itemValue="mod" itemLabel="Modulo Division"/>
+                </apex:selectRadio>
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >               
+            </apex:pageBlockSectionItem>       
+            <apex:pageBlockSectionItem >
+                <apex:outputLabel value="Result"/>
+            </apex:pageBlockSectionItem>
+            <apex:pageBlockSectionItem >
+                <apex:inputText value="{!result}" id="res"/><apex:actionStatus id="sts" startText="Finding..."/>
+            </apex:pageBlockSectionItem>                                      
+        </apex:pageBlockSection>   
+        <apex:pageBlockButtons >
+            <apex:commandButton value="Find" action="{!find}" reRender="res"  status="sts"/>
+        </apex:pageBlockButtons>
+    </apex:pageBlock>
+   
+</apex:form>
+
+</apex:page>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="Employee.xsl"?>
+<Employee>
+<Personal-details>
+<empno>1</empno>
+<name>Kartik</name>
+<address>Pune</address>
+<emailid>lanjeewar@gmail.com</emailid>
+<salary>$100</salary>
+</Personal-details>
+
+<Personal-details>
+<empno>2</empno>
+<name>Jigyarth</name>
+<address>Rajsathan</address>
+<emailid>jonty@gmail.com</emailid>
+<salary>$150</salary>
+</Personal-details>
+
+<Personal-details>
+<empno>3</empno>
+<name>Yash</name>
+<address>Sangli</address>
+<emailid>yash@gmail.com</emailid>
+<salary>$200</salary>
+</Personal-details>
+
+<Personal-details>
+<empno>4</empno>
+<name>Aman</name>
+<address>Delhi</address>
+<emailid>aman@gmail.com</emailid>
+<salary>$300</salary>
+</Personal-details>
+
+</Employee>

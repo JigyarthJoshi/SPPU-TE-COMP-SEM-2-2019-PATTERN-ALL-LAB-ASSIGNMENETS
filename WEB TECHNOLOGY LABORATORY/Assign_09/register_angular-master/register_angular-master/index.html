@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Signup Form</title>
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+
+    <script src="app.js">
+    </script>
+    <style>
+        body {
+            background: url(images/bg.jpg) no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+        }
+        
+        .images {
+            width: 50px;
+            height: 50px;
+            margin-right: 10px;
+        }
+        
+        label {
+            font-weight: bold;
+            color: white;
+            font-size: large;
+        }
+        
+        h3 {
+            color: white;
+        }
+        
+        .table-bordered {
+            border-color: black;
+        }
+        
+        thead {
+            font-size: large;
+            font-weight: bold;
+            background-color: #2C3E50;
+            color: white;
+        }
+        
+        tbody {
+            background-color: white;
+        }
+        
+        footer {
+            background-color: #2C3E50;
+        }
+    </style>
+</head>
+
+<body class="sample">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <img src="images/logo.jpg" class="images">
+
+        <a class="navbar-brand" href="#"><strong>ANGULAR JS SIGN UP FORM</strong></a>
+
+    </nav><br>
+    <div ng-app="myApp" class="container">
+        <div ng-controller="ContactController">
+            <form role="form" class="well" ng-hide="ifSearchUser">
+                <div class="form-group">
+                    <label for="fname"> Firstname  </label>
+                    <input type="text" id="fname" class="form-control" placeholder="Enter First Name " required="" ng-model="newcontact.fname">
+                </div>
+                <div class="form-group">
+                    <label for="lname"> Lastname  </label>
+                    <input type="text" id="lname" class="form-control" placeholder="Enter Last Name " required="" ng-model="newcontact.lname">
+                </div>
+                <div class="form-group">
+                    <label for="uname"> Username  </label>
+                    <input type="text" id="uname" class="form-control" placeholder="Enter User Name " required="" ng-model="newcontact.uname">
+                </div>
+                <div class="form-group">
+                    <label for="password"> Password  </label>
+                    <input type="password" id="password" class="form-control" placeholder="Enter Password " required="" ng-model="newcontact.password">
+                    <small class="form-text text-muted">We'll never share your password with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="birthday">Birthday:</label>
+                    <input type="date" id="birthday" class="form-control" required="" ng-model="newcontact.birthday">
+                </div>
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <select id="country" name="country" class="form-control" required="" ng-model="newcontact.country" ng-options="x for x in names">
+                    </select>
+                </div>
+                <br>
+                <input type="hidden" ng-model="newcontact.id">
+                <input type="button" class="btn btn-primary" ng-click="saveContact()" class="btn btn-primary" value="Submit">
+            </form>
+            <br><br>
+            <div>
+                <h3><b>Registered Users</b></h3>
+                <table ng-if="contacts.length" class="table table-bordered table-hover">
+                    <thead>
+                        <tr class="info">
+                            <th>FirstName</th>
+                            <th>Lastname</th>
+                            <th>Username</th>
+                            <th>DOB</th>
+                            <th>Country</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="contact in contacts">
+                            <td>{{ contact.fname }}</td>
+                            <td>{{ contact.lname }}</td>
+                            <td>{{ contact.uname }}</td>
+                            <td>{{ contact.birthday }}</td>
+                            <td>{{ contact.country }}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div ng-hide="contacts.length > 0">No Users Found</div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+
+
+</body>
+<footer>
+    <p class="p-3 text-white text-center" style="bottom: 100px;">@AngularJS</p>
+</footer>
+
+</html>

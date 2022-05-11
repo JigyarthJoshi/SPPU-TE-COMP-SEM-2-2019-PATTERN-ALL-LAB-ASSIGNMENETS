@@ -1,0 +1,7 @@
+public class Class1
+{
+	public static void ApexMethod()
+    {
+        system.debug('Hello World');
+    }
+}

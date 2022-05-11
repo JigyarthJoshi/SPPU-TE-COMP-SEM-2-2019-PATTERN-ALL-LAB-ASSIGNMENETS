@@ -1,0 +1,4 @@
+1. Test acuuracy
+2. 3 classes
+3. open cv
+4. rtpcr

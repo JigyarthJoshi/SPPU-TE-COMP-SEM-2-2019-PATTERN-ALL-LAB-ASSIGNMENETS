@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Beastly&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Olive Garden</title>
+</head>
+<body>
+    <div class="header" style="display: flex;">
+       <h1 class="heading" style="color: red; align-self:auto;"><b>OLIVE GARDEN</b></h1> <!--Inline CSS-->
+        <h2 class="heading" style="margin-left: 100px;">Menu</h2> <!--Inline CSS-->
+        <h3 class="heading">Order Now</h3>
+        <h2 class="heading"> Join waitlist</h2>
+        <h2 class="heading">Careers</h2>
+    </div>
+   <div style="display: flex;">
+    <table class="table" style="display: flex;">
+        <tr>
+            <th class="item">Category</th>
+            <th class="item">Item</th>
+            <th class="item">Price</th>
+        </tr>
+        <tr>
+            <th class="start">Starters</th>
+            <th class="start">Tomato Soup</th>
+            <th class="start">$10</th>
+        </tr>
+        <tr>
+            <th class="start">Starters</th>
+            <th class="start">Sandwich</th>
+            <th class="start">$20</th>
+        </tr>
+        <tr>
+            <th class="start">Main Course</th>
+            <th class="start">Dal Fry</th>
+            <th class="start">$40</th>
+        </tr>
+        <tr>
+            <th class="start">Main Course</th>
+            <th class="start">Palak Paneer</th>
+            <th class="start">$250</th>
+        </tr>
+        <tr>
+            <th class="start">Deserrt</th>
+            <th class="start">Cappuccino</th>
+            <th class="start">$70</th>
+        </tr>
+        <tr>
+            <th class="start">Deserrt</th>
+            <th class="start">Latte</th>
+            <th class="start">$60</th>
+        </tr>
+    </table>
+    <div style="display: flex;" >
+    <div>
+    <ul class="ul_list" >
+        <li>Pizza</li>
+        <li>Burger</li>
+        <li>Fries</li>
+        <li>PopCorn</li>
+    </ul>
+    </div>
+    <div>
+    <ol class="ol_list" type="i">
+        <li>Sandwich</li>
+        <li>Peri Peri</li>
+        <li>Noodles</li>
+        <li>Pasta</li>
+    </ol>
+    </div>
+</div>
+<div class="para">
+<p title="random">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic consequuntur doloribus neque ex eaque? Illum autem officia ducimus nisi aliquam architecto optio consequuntur earum delectus magni, facere nihil ab similique?</p>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt alias iusto maxime inventore reiciendis fuga voluptate, incidunt accusamus veniam error quaerat in expedita nobis, facere ratione optio cumque. Odit, recusandae!</p>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos, aspernatur! Doloremque voluptatem fugiat magnam? Qui ullam facilis numquam maiores libero voluptates, enim commodi nostrum asperiores optio amet porro velit mollitia!</p>
+</div>
+</div>
+
+    <div style="display: flex;">
+        <h4 class="contact"> You can find us here: </h3>
+            <img src="zomato.png" style="width:50px;height: 50px; margin-top: 50px; margin-left: 100px;">
+            <a href="https://www.zomato.com/" target="_blank">Zomato</a>
+            <a href="https://www.olivegarden.com/home" >
+                <img src="olive.jpg" alt="HTML tutorial" style="width:452px;height:452px;">
+                </a>
+    </div>
+
+    <div class="form">
+        <form>
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" class="forrr"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" class="forrr"><br>
+            <label for="location">Location:</label><br>
+            <input type="text" id="loc" name="loca" class="forrr"><br>
+            <label for="feedback">Enter Feedback:</label><br>
+
+            <textarea name="feed" id="d" cols="50" rows="10" ">
+
+              
+            </textarea><br><br>
+            <input type="submit" value="Submit" style="border: 50px;font-size: 40px; color: red;font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ">
+          </form>
+    </div>
+
+</body>
+<!-- Internal CSS-->
+<style>
+h1
+{
+    padding-left: 2px;
+    position: relative;
+}
+h2
+{
+    padding-left: 2px;
+    position:relative;
+}
+
+</style>
+
+</html>
